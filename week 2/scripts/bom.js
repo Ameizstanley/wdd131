@@ -45,3 +45,13 @@ button.addEventListener('click', function() {
 
 
 });
+
+
+const chapterArray = getChapterList();
+
+function getChapterList() {
+
+    
+    return [];
+
+}

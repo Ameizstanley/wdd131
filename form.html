@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Product Review Form</title>
+    <meta name="author" content="EMERIBE STANLEY AMEIZ">
+    <meta name="descriptionj" content="Product review form for a product.">
+
+    <link href="styles/form.css" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Big+Shoulders+Stencil:opsz,wght@10..72,100..900&family=Oswald:wght@200..700&family=Roboto:wdth,wght@75..100,100..900&display=swap" rel="stylesheet">
+
+    <script src="scripts/form.js"defer></script>
+
+</head>
+<body>
+    <header>
+        <h1>Product Review</h1>
+    </header>
+    <main>
+        <form method="get" action="review.html">
+            <fieldset>
+                <legend>Product Name</legend>
+                <select name="product name" id="product-name" required>
+                    <option value="" disabled selected>Select a product</option>
+                </select>
+            </fieldset>
+            <fieldset class="star-rating">
+                <legend>Overall Rating</legend>
+                <input type="radio" id="5-stars" name="rating" value="5" required>
+                <label for="5-stars" title="5 stars">★</label>
+
+                <input type ="radio" id="4-stars" name="rating" value="4" required>
+                <label for="4-stars" title="4 stars">★</label>
+
+                <input type="radio" id="3-stars" name="rating" value="3" required>
+                <label for="3-stars" title="3 stars">★</label>
+
+                <input type="radio" id="2_stars" name="rating" value="2" required>
+                <label for="2-stars" title="2 stars" name="rating">★</label>
+
+                <input type="radio" id="1-stars" name="rating" value="1" required>
+                <label for="1-star" title="1 star">★</label>
+            </fieldset>
+
+            <fieldset class="date">
+                <legend>Date of Installation</legend>
+                <input type="date" name="date of installation" id="date-of-installation" required>
+
+                <div>
+                    <p>which features did you find useful in the product?</p>
+                    <p><em>(check all that apply)</em></p>
+                </div>  
+                
+                <div class="checkbox-group">
+                <label><input type="checkbox" id="feature1" name="durability" value="yes">durability</label>
+                <label><input type="checkbox" id="feature2" name="ease" value="yes">Ease of Use</label>
+                <label><input type="checkbox" id="feature3" name="performance" value="yes">Performance</label>
+                <label><input type="checkbox" id="feature4" name="design" value="yes">Design</label>
+                </div>
+            </fieldset>
+
+            <fieldset>
+                <legend>Written Review <em>(optional)</em></legend>
+                <textarea name="review" id="review" cols="30" rows="10" placeholder="Write your review here..." optional></textarea>
+            </fieldset>
+
+            <fieldset>
+                <legend>Your Name <em>(optional)</em></legend>
+                <input type="text" id="user-name" name="name" optional>
+            </fieldset>
+
+            <div class="submit-button">
+                <input type="submit" value="Post Review">
+            </div>
+            
+        </form>
+
+    </main>
+    <footer>
+        <p>©<span id="currentyear">2025</span> Emeribe Ameiz Stanley - Imo State, Nigeria</p>
+        <p id="lastModified" class="update-info"></p>
+    </footer>
+    
+</body>
+</html>
