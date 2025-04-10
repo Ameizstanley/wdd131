@@ -5,8 +5,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Product Review Form</title>
     <meta name="author" content="EMERIBE STANLEY AMEIZ">
-    <meta name="description" content="Product review form page.">
     <meta name="description" content="Submit your product reviews, rate products, and share your feedback on features like durability, ease of use, performance, and design.">
+
     <link href="styles/form.css" rel="stylesheet">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -23,6 +23,7 @@
         <form method="get" action="review.html">
             <fieldset>
                 <legend>Product Name <em>(required)</em></legend>
+                <label for="product-name">Select Product:</label>
                 <select name="product name" id="product-name" required>
                     <option value="" disabled selected>Select a product</option>
                 </select>
@@ -68,7 +69,8 @@
             </fieldset>
 
             <fieldset>
-                <legend>Your Name <em>(optional)</em></legend>
+                <legend>Name <em>(optional)</em></legend>
+                <label for="user-name">write Your Name:</label>
                 <input type="text" id="user-name" name="name">
             </fieldset>
 
