@@ -1,0 +1,21 @@
+header{
+    background-color: rgba(20, 3, 3, 0.966);
+    color: white;
+    height: 100px;
+    width: auto;
+    text-align: center;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif ;
+}
+
+h2{
+    background-color: orange;
+}
+
+.logo img{
+    width: 10px;
+    height: 10px;
+}
+
+p{
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
