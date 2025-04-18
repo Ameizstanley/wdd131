@@ -24,19 +24,25 @@
             <a href="about-us.html">About Us</a>
     </header>
     <main>
-        <div class="course-hero">
+        <section class="course-hero">
             <h2 class="courses-h2">Our language Courses</h2>
             <p>Explore our wide range of language courses taught by native speakers. Find the perfect course to achieve your language learning goals.</p>
-        </div>
+        </section>
         <section class="the-courses">
-            <div class="search-container">
-               
-                <input type="search" id="search-courses" name="courses" placeholder="Search for a course...">
-               
-                <input type="search" id="search-language" name="language" placeholder="language...">
-                
-                <input type="search" id="search-language" name="levels" placeholder="levels...">
+            <div class="search-container"> 
+                <input type="text" id="course-search" placeholder="Search courses...">                          
+
+                <select name="language" id="language-filter">
+                    <option value="">Select a Language....</option>
+
+                </select>
+                <select name="level" id="level-filter">
+                    <option value="">Select a level..</option>
+
+                </select>
+                <button id="filter-button" class="btn">Filter</button>
             </div>
+            <div id="course-section"></div>
         </section>
 
     </main>

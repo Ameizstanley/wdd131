@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Emeribe Stanley Chibuike">
+    <meta name="description" content="Ameiz Project -  registration page of A web application for a language school that offers courses in various languages.">
+    <title>WDD 131 – Dynamic Web Fundamentals - Emeribe Ameiz</title>
+
+    <link href="styles/ameiz-project.css" rel="stylesheet">
+
+    <script src="scripts/register.js" defer></script>
+</head>
+<body>
+    <header>
+        <div class="header-logo">
+            <img src="images/ameiz-logo3.png" alt="my logo" height="50" width="50" loading="lazy">
+            <h1>Ameiz Lingua World</h1>
+        </div>
+        <nav>
+            <a href="ameiz-project.html">Home</a>
+            <a href="register.html">Register Now</a>
+            <a href="courses.html">Courses</a>
+            <a href="about-us.html">About Us</a>
+        </nav>
+
+    </header>
+    <main class="form">
+        <h2 class="form-heading">Registration Form</h2>
+        <form method="get" action="thanks.html">
+            <fieldset>
+                <legend>Personal Information</legend>
+                <div class="information">
+                    <label>first name</label>
+                    <input type="text" id="fname" name="firstname">
+                    <label>last name</label>
+                    <input type="text" id="lname" name="lastname">
+                    <label>email</label>
+                    <input type="email" id="email" name="email">
+                    <label>Date of birth</label>
+                    <input type="date" id="date" name="date">
+                </div>
+                <label>address</label>
+                <input type="text" id="address" name="address">
+                
+            </fieldset>
+
+            <fieldset class="selection">
+                <legend>Course Selection</legend>
+                <label>language*</label>
+                <input type="text" id="language" name="language">
+                <label>proficiency level*</label>
+                <input type="text" id="proficiency-level" name="level">
+                <label> Course Type*</label>
+                <input type="text" id="course-type" name="course">
+                <label>Schedule Preference*</label>
+                <input type="text" id="schedule" name="schedule">
+            </fieldset>
+            <fieldset class="additional">
+                <legend>Additional Information</legend>
+                <textarea name="requirements" id="aditional" cols="30" rows="10"></textarea>
+
+
+                <p  class="check-p">how did you hear about us</p>
+                <div class="check">
+                    <label>friends<input type="checkbox" id="friends" value="yes"></label>
+                    <label>family <input type="checkbox" id="family" value="yes"></label>
+                    <label>referals <input type="checkbox" id="referal" value="yes"></label>
+
+                </div>
+                
+            </fieldset>
+            
+            <button class="btn">submit</button>
+        </form>
+    </main>
+    <footer>
+        <p>©<span id="currentyear">2025</span> Emeribe Ameiz Stanley - Imo State, Nigeria</p>
+        <p id="lastModified" class="update-info"></p>
+    </footer>
+    
+</body>
+</html>

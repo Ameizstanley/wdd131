@@ -337,21 +337,81 @@ footer{
 
 }
 
+
+.search-container select,
 .search-container input{
     padding: 10px;
     width: 300px;
     border-radius: 20px;
     border: 2px solid #2D5DA1;
 }
+.search-container select:focus,
 .search-container input:focus{
     outline: none;
     border-color: #FF7D54;
 }
 
+.information,.selection{
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    
 
+}
+.information input,
+.selection input{
+    width: 400px;
+    height: 35px;
+}
 
+form{
+    
+    width: 600px;
+    background-color: white;
+    border-style:ridge;
+}
 
+.form{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: aliceblue; 
 
+}
+
+#address{
+    width: 500px;
+    height: 40px;
+}
+fieldset{
+    border: none;
+}
+.additional{
+    display: flex;
+    flex-direction: column;
+
+}
+legend,
+.check-p{
+    color: #2D5DA1;
+    font-size: 30px;
+}
+
+.check{
+    display: flex;
+    margin: 10px;
+    font-size: large;
+    gap: 20px;
+}
+
+.form-heading{
+    font-size: xx-large;
+}
+
+form .btn{
+    align-self: center;
+}
 
 
 
