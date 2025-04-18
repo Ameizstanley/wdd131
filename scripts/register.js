@@ -14,7 +14,7 @@
       return;
     }
 
-    // ✅ STORE to LOCALSTORAGE
+    //  STORE to LOCALSTORAGE
     const userData = {
       fname,
       lname,

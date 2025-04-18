@@ -1,0 +1,43 @@
+@media(max-width:600px){
+    .hero{
+        display: flex;
+        flex-wrap: wrap;
+        height:fit-content;
+        border-radius: 20px;
+    }
+    .hero-img img{
+        width: 400px;
+        object-fit:fill;
+        margin: auto;
+        border-radius: 20px;
+
+    }
+    .newsletter{
+        width: 450px;
+    }
+    .hero-section{
+        display: flex;
+        flex-direction: column;
+    }
+    .img-section img{
+        object-fit: cover;
+        width: 370px;
+    }
+
+    .purpose-text{
+        display: flex;
+        flex-wrap: wrap;
+    }
+    form{
+        width: 400px;
+    }
+    .information input,
+    .selection input{
+        width: 300px;
+    }
+    #address{
+        width: 350px;
+
+    }
+
+}
